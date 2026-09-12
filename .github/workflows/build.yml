@@ -1,0 +1,31 @@
+name: build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build salua_lua.dll (Windows x86)
+    runs-on: windows-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build (plugins/build.bat)
+        working-directory: plugins
+        shell: cmd
+        run: build.bat
+
+      - name: Archive artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: salua_lua-windows-x86
+          path: plugins/salua_lua.dll
+          if-no-files-found: error
