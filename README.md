@@ -142,3 +142,15 @@ pawno\pawncc.exe -i pawno\include -o gamemodes\lua_gm.amx gamemodes\lua_gm.pwn
    строчку в `g_callbacks[]` в `main.cpp`, далее в Lua написать `function OnX(...)`.
 2. Новый натив: добавить public-враппер `API_Имя(...)` в `lua_gm.pwn`, сигнатуру
    в `g_apis[]` — и он будет доступен через `samp.call("Имя", ...)`.
+
+## Вклад в проект
+
+Репозиторий открыт для всех:
+
+- Если нашёл сбой, ошибку или краш сервера — заведи **Issue**: https://github.com/devsers53/samp-server-lua/issues
+  (желательно с логом `server_log.txt` и версией SA-MP/плагина).
+- Если чего-то не хватает (колбэк, натив, фича) — напиши **Issue** с пожеланием
+  или PR: https://github.com/devsers53/samp-server-lua/pulls
+- Любой может форкнуть репозиторий, внести правки и предложить **Pull Request** —
+  их можно присылать по любому поводу: багфиксы, новые нативы/колбэки,
+  улучшения документации, свои примеры Lua-модов.
