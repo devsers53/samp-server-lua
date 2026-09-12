@@ -1,5 +1,7 @@
 # samp-server-lua
 
+![CI build](https://github.com/devsers53/samp-server-lua/actions/workflows/build.yml/badge.svg)
+
 Плагин для SA-MP-сервера, который позволяет писать гейм-мод целиком на
 **Lua 5.5** вместо Pawn: все колбэки сервера доходят до Lua, а SA-MP-нативы
 вызываются из Lua через мост на плагин.
