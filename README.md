@@ -79,13 +79,9 @@ server.cfg            — пример конфигурации сервера
 
 ## Сборка плагина (Windows)
 
-1. Вытянуть SDK (нужен только на время сборки, в репозиторий не включён):
-   ```bat
-   git clone https://github.com/maddinat0r/samp-plugin-sdk plugins\sdk
-   ```
-2. Установить Visual Studio (проверено VS 18 Community) с компонентом
+1. Установить Visual Studio (проверено VS 18 Community) с компонентом
    MSVC x86.
-3. Из папки `plugins` запустить:
+2. Из папки `plugins` запустить:
    ```bat
    build.bat
    ```
@@ -94,6 +90,9 @@ server.cfg            — пример конфигурации сервера
    конфликт `uint32_t` со `stdint.h`), исключает `lua.c`/`luac.c` (дублируют
    `main`) и линкует `salua_lua.dll` по `salua_lua.def` (экспорты
    `Supports/Load/Unload/AmxLoad/AmxUnload/ProcessTick` без декорации).
+
+SDK (`maddinat0r/samp-plugin-sdk`, нужен только для сборки) и продакшен-исходники
+Lua 5.5.1 уже включены в репозиторий: `plugins/sdk/` и `plugins/src/lua/`.
 
 Если меняли `gamemodes/lua_gm.pwn`, перекомпилировать прокси:
 ```bat
