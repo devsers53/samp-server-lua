@@ -6,12 +6,13 @@
 **Lua 5.5** вместо Pawn: все колбэки сервера доходят до Lua, а SA-MP-нативы
 вызываются из Lua через мост на плагин.
 
-Протестировано на:
-- [ ] SA-MP Dedicated Server v0.3.7-R1 (Windows) — не тестировалось
-- [ ] SA-MP Dedicated Server v0.3.7-R2 (Windows) — не тестировалось
-- [x] **SA-MP Dedicated Server v0.3.7-R3 (Windows)** — протестировано ✅
-- [ ] SA-MP Dedicated Server v0.3.7-R4 (Windows) — не тестировалось
-- [ ] SA-MP Dedicated Server v0.3.7-R5 (Windows) — не тестировалось
+Протестировано на версиях SAMP:
+|--------|--------|
+| v0.3.7-R1 (Windows) | ❌ не тестировалось |
+| v0.3.7-R2 (Windows) | ❌ не тестировалось |
+| **v0.3.7-R3 (Windows)** | ✅ протестировано |
+| v0.3.7-R4 (Windows) | ❌ не тестировалось |
+| v0.3.7-R5 (Windows) | ❌ не тестировалось |
 
 Плагин собран как **Windows .dll** (MSVC, x86).
 Планируется под Linux собрать. 
