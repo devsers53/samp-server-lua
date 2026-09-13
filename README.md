@@ -7,8 +7,14 @@
 вызываются из Lua через мост на плагин.
 
 Протестировано на:
-- **SA-MP Dedicated Server v0.3.7-R3** (Windows);
-- плагин собран как **Windows .dll** (MSVC, x86).
+- [ ] SA-MP Dedicated Server v0.3.7-R1 (Windows) — не тестировалось
+- [ ] SA-MP Dedicated Server v0.3.7-R2 (Windows) — не тестировалось
+- [x] **SA-MP Dedicated Server v0.3.7-R3 (Windows)** — протестировано ✅
+- [ ] SA-MP Dedicated Server v0.3.7-R4 (Windows) — не тестировалось
+- [ ] SA-MP Dedicated Server v0.3.7-R5 (Windows) — не тестировалось
+
+Плагин собран как **Windows .dll** (MSVC, x86).
+Планируется под Linux собрать. 
 
 ## Как это работает
 
